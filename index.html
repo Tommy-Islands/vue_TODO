@@ -36,7 +36,7 @@
                     <td class="state">
                         <!-- 状態変更ボタンのモック -->
                         <button v-on:click="doChangeState(item)">
-                            {{ item.state }}
+                            {{ labels[item.state] }}
                         </button>
                     </td>
                     <td class="button">
