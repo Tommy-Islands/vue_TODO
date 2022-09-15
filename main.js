@@ -44,10 +44,10 @@ const app = new Vue({
         doChangeState: function(item){
             item.state = item.state ? 0 : 1
         },
-        dpoRemove:function (item) {
-            var index = this.todos.indeOf(item)
+        doRemove: function(item) {
+            var index = this.todos.indexOf(item)
             this.todos.splice(index, 1)
-        }
+          }
     },
     watch: {
         // オプションを使う場合はオブジェクト形式にする
